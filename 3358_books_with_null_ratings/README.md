@@ -1,0 +1,69 @@
+# 3358. Books with NULL ratings
+
+## Description
+
+Table: books
+
+<pre>
++----------------+---------+
+| Column Name    | Type    |
++----------------+---------+
+| book_id        | int     |
+| title          | varchar |
+| author         | varchar |
+| published_year | int     |
+| rating         | decimal |
++----------------+---------+
+</pre>
+
+- book_id is the unique key for this table.
+- Each row of this table contains information about a book including its unique ID,
+title, author, publication year, and rating.
+- rating can be NULL, indicating that the book hasn't been rated yet.
+
+Write a solution to find all books that have not been rated yet (i.e., have a NULL
+rating).
+
+Return the result table ordered by `book_id` in ascending order.
+
+## Examples
+
+The result format is in the following example.
+
+### Example 1:
+
+__Input__:
+
+books table:
+
+<pre>
++---------+------------------------+------------------+----------------+--------+
+| book_id | title                  | author           | published_year | rating |
++---------+------------------------+------------------+----------------+--------+
+| 1       | The Great Gatsby       | F. Scott         | 1925           | 4.5    |
+| 2       | To Kill a Mockingbird  | Harper Lee       | 1960           | NULL   |
+| 3       | Pride and Prejudice    | Jane Austen      | 1813           | 4.8    |
+| 4       | The Catcher in the Rye | J.D. Salinger    | 1951           | NULL   |
+| 5       | Animal Farm            | George Orwell    | 1945           | 4.2    |
+| 6       | Lord of the Flies      | William Golding  | 1954           | NULL   |
++---------+------------------------+------------------+----------------+--------+
+</pre>
+
+__Output__:
+
+<pre>
++---------+------------------------+------------------+----------------+
+| book_id | title                  | author           | published_year |
++---------+------------------------+------------------+----------------+
+| 2       | To Kill a Mockingbird  | Harper Lee       | 1960           |
+| 4       | The Catcher in the Rye | J.D. Salinger    | 1951           |
+| 6       | Lord of the Flies      | William Golding  | 1954           |
++---------+------------------------+------------------+----------------+
+</pre>
+
+__Explanation__:
+
+- The books with book_id 2, 4, and 6 have NULL ratings. These books are included in the
+result table.
+- The other books (book_id 1, 3, and 5) have ratings and are not included.
+- The result is ordered by book_id in ascending order
