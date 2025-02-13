@@ -1,5 +1,7 @@
 # 3450. Maximum students on a single bench
 
+__Difficulty__: easy
+
 ## Description
 
 You are given a 2D integer array of student data `students`, where

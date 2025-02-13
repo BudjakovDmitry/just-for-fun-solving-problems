@@ -1,5 +1,7 @@
 # 3358. Books with NULL ratings
 
+__Difficulty__: easy
+
 ## Description
 
 Table: books

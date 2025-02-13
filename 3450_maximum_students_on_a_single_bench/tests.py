@@ -3,7 +3,7 @@ import unittest
 from solution import solution
 
 
-class TestStringMethods(unittest.TestCase):
+class TestSolution(unittest.TestCase):
 
     def test_zero(self):
         real = solution([])
