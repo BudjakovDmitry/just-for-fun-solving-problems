@@ -12,11 +12,13 @@ return the new string.
 ### Example 1:
 
 __Input__: s = "leetcodeisacommunityforcoders"
+
 __Output__: "ltcdscmmntyfrcdrs"
 
 ### Example 2:
 
 __Input__: s = "aeiou"
+
 __Output__: ""
 
 ## Constraints
