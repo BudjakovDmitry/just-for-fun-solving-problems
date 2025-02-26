@@ -11,7 +11,7 @@ Return the score of `s`.
 
 ## Examples
 
-## Example 1:
+### Example 1:
 
 __Input__: s = "hello"
 
@@ -23,7 +23,7 @@ The ASCII values of the characters in `s` are: `'h' = 104`, `'e' = 101`, `'l' = 
 `'o' = 111`. So, the score of s would be
 `|104 - 101| + |101 - 108| + |108 - 108| + |108 - 111| = 3 + 7 + 0 + 3 = 13`.
 
-## Example 2:
+### Example 2:
 
 __Input__: s = "zaz"
 
